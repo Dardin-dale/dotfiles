@@ -1,5 +1,5 @@
 ### ZSH HOME
-export ZSH=$HOME/.zsh
+export ZSH=$HOME/sw/dotfiles/zsh
 
 ### ---- history config -------------------------------------
 export HISTFILE=$ZSH/.zsh_history
