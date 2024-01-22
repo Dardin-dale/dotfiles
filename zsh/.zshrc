@@ -53,6 +53,7 @@ alias gf='git reflog'
 source $ZSH/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 fpath=($ZSH/plugins/zsh-completions/src $fpath)
+source $ZSH/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # -------------------------------------------------------------------
 # THEME 
