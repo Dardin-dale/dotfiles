@@ -55,6 +55,8 @@ source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 fpath=($ZSH/plugins/zsh-completions/src $fpath)
 source $ZSH/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
+bindkey '^I' autosuggest-accept
+
 # -------------------------------------------------------------------
 # THEME 
 # -------------------------------------------------------------------

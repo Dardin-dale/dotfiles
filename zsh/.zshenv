@@ -10,5 +10,3 @@ export PATH=$PATH:/opt/swx/groovy/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/opt/hbase/bin
 export CATALINA_HOME=/opt/swx/apache-tomcat-8.5.20
-
-
