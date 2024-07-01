@@ -1,3 +1,4 @@
 plugins/*
 themes/*
-
+.zsh_history
+.zcompdump

@@ -1,12 +1,18 @@
-. "$HOME/.cargo/env"
-
+#"$HOME/.cargo/env"
 
 # set dev PATH Envs DYNOTAG
-export JAVA_HOME=/opt/swx/jdk1.8.0_66
+export JAVA_HOME=/opt/swx/java
+export DART_HOME=/opt/swx/dart
+export ANT_HOME=/opt/swx/ant
+export GROOVY_HOME=/opt/swx/groovy
+export CATALINA_HOME=/opt/swx/tomcat
+export IVY_HOME=/opt/swx/ivy
+export DARTDOCS_HOME=/opt/swx/dartdocs
+export HBASE_HOME=/opt/hbase
 export PATH=$PATH:$JAVA_HOME/bin
-export PATH=$PATH:/opt/swx/dart/dart-sdk/bin
-export PATH=$PATH:/opt/swx/ant/bin
-export PATH=$PATH:/opt/swx/groovy/bin
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:/opt/hbase/bin
-export CATALINA_HOME=/opt/swx/apache-tomcat-8.5.20
+export PATH=$PATH:/opt/apache-maven-3.9.7/bin
+export PATH=$PATH:$DART_HOME/dart-sdk/bin
+export PATH=$PATH:$ANT_HOME/bin
+export PATH=$PATH:$GROOVY_HOME/bin
+export PATH=$PATH:$HBASE_HOME/bin
+export PATH=$PATH:/opt/swx/dynamodb
