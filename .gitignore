@@ -1,2 +1,4 @@
 ./zsh/themes/
 ./zsh/plugins/
+.zsh_history
+.zcompdump
