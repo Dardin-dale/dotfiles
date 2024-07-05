@@ -22,9 +22,10 @@ setopt HIST_IGNORE_ALL_DUPS
 
 # History won't show duplicates on search.
 setopt HIST_FIND_NO_DUPS
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ll='ls -alF --color=auto'
+alias ls='ls --color=auto'
+alias la='ls -A --color=auto'
+alias l='ls -CF --color=auto'
 
 # -------------------------------------------------------------------
 # Git
