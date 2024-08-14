@@ -65,3 +65,19 @@ source $ZSH/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# BEGIN ANSIBLE MANAGED BLOCK - Golang
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go/bin
+# END ANSIBLE MANAGED BLOCK - Golang
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# BEGIN ANSIBLE MANAGED BLOCK - NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# END ANSIBLE MANAGED BLOCK - NVM
+# BEGIN ANSIBLE MANAGED BLOCK - Rust
+export PATH="$HOME/.cargo/bin:$PATH"
+# END ANSIBLE MANAGED BLOCK - Rust
