@@ -81,3 +81,4 @@ export NVM_DIR="$HOME/.nvm"
 # BEGIN ANSIBLE MANAGED BLOCK - Rust
 export PATH="$HOME/.cargo/bin:$PATH"
 # END ANSIBLE MANAGED BLOCK - Rust
+alias activate_python="source /home/logan/.venvs/python/bin/activate"
