@@ -16,4 +16,3 @@ export PATH=$PATH:$HBASE_HOME/bin
 . "$HOME/.cargo/env"
 export IVY_HOME=/opt/swx/ivy
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/opt/swx/dynamodb
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/opt/swx/dynamodb
