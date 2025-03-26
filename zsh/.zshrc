@@ -93,3 +93,7 @@ fi
 export PATH=$HOME/.local/share/fnm:$PATH
 eval "$(fnm env --use-on-cd 2>/dev/null || true)"
 # END ANSIBLE MANAGED BLOCK - fnm
+# BEGIN ANSIBLE MANAGED BLOCK - Neovim
+# Add local bin to PATH for Neovim
+export PATH="$HOME/.local/bin:$PATH"
+# END ANSIBLE MANAGED BLOCK - Neovim
