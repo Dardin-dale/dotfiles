@@ -82,3 +82,14 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.cargo/bin:$PATH"
 # END ANSIBLE MANAGED BLOCK - Rust
 alias activate_python="source /home/logan/.venvs/python/bin/activate"
+
+# fnm
+FNM_PATH="/home/logan/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/logan/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
+# BEGIN ANSIBLE MANAGED BLOCK - fnm
+export PATH=$HOME/.local/share/fnm:$PATH
+eval "$(fnm env --use-on-cd 2>/dev/null || true)"
+# END ANSIBLE MANAGED BLOCK - fnm
