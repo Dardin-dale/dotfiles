@@ -46,6 +46,8 @@ alias gcl='git clone'
 alias gta='git tag -a -m'
 alias gf='git reflog'
 
+alias tt='sudo tail -f /opt/swx/tomcat/logs/catalina.out'
+alias tail-tomcat='sudo tail -f /opt/swx/tomcat/logs/catalina.out'
 
 
 # -------------------------------------------------------------------
@@ -97,3 +99,35 @@ eval "$(fnm env --use-on-cd 2>/dev/null || true)"
 # Add local bin to PATH for Neovim
 export PATH="$HOME/.local/bin:$PATH"
 # END ANSIBLE MANAGED BLOCK - Neovim
+# BEGIN ANSIBLE MANAGED BLOCK - Claude Code
+# Claude Code function for shell switching
+alias claude-bash='~/.local/bin/claude-bash'
+alias cb='claude-bash'  # Short alias
+# END ANSIBLE MANAGED BLOCK - Claude Code
+# BEGIN ANSIBLE MANAGED BLOCK - Python Virtual Environment
+# Python virtual environment management functions
+function pyvenv_activate() {
+    export VIRTUAL_ENV="$HOME/.local/share/python-envs/default"
+    export PATH="$VIRTUAL_ENV/bin:$PATH"
+    export PYTHON_VENV_ACTIVE=1
+    echo "✓ Python virtual environment activated"
+}
+
+function pyvenv_deactivate() {
+    if [ -n "$PYTHON_VENV_ACTIVE" ]; then
+        # Remove venv from PATH
+        export PATH=$(echo $PATH | sed -e "s|$HOME/.local/share/python-envs/default/bin:||g")
+        unset VIRTUAL_ENV
+        unset PYTHON_VENV_ACTIVE
+        echo "✓ Python virtual environment deactivated"
+    else
+        echo "No Python virtual environment currently active"
+    fi
+}
+
+# Convenience aliases
+alias pyenv-on='pyvenv_activate'
+alias pyenv-off='pyvenv_deactivate'
+alias python-on='pyvenv_activate'
+alias python-off='pyvenv_deactivate'
+# END ANSIBLE MANAGED BLOCK - Python Virtual Environment
