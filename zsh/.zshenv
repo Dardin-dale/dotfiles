@@ -15,3 +15,4 @@ export PATH=$PATH:$GROOVY_HOME/bin
 export PATH=$PATH:$HBASE_HOME/bin
 . "$HOME/.cargo/env"
 export IVY_HOME=/opt/swx/ivy
+export PATH="$HOME/development/flutter/bin:$PATH"
