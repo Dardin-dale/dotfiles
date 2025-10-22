@@ -13,6 +13,6 @@ export PATH=$PATH:$DART_HOME/dart-sdk/bin
 export PATH=$PATH:$ANT_HOME/bin
 export PATH=$PATH:$GROOVY_HOME/bin
 export PATH=$PATH:$HBASE_HOME/bin
+export PATH=$PATH:$HOME/.pub-cache/bin
 . "$HOME/.cargo/env"
 export IVY_HOME=/opt/swx/ivy
-export PATH=~/development/flutter/bin:$PATH

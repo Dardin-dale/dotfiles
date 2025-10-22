@@ -131,3 +131,9 @@ alias pyenv-off='pyvenv_deactivate'
 alias python-on='pyvenv_activate'
 alias python-off='pyvenv_deactivate'
 # END ANSIBLE MANAGED BLOCK - Python Virtual Environment
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/logan/.dart-cli-completion/zsh-config.zsh ]] && . /home/logan/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
