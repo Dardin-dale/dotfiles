@@ -15,4 +15,3 @@ export PATH=$PATH:$GROOVY_HOME/bin
 export PATH=$PATH:$HBASE_HOME/bin
 export PATH=$PATH:$HOME/.pub-cache/bin
 . "$HOME/.cargo/env"
-export IVY_HOME=/opt/swx/ivy
