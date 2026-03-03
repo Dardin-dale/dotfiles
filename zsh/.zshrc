@@ -22,6 +22,14 @@ setopt HIST_IGNORE_ALL_DUPS
 
 # History won't show duplicates on search.
 setopt HIST_FIND_NO_DUPS
+
+# Write history incrementally (reduces corruption on abrupt shutdown).
+setopt INC_APPEND_HISTORY
+
+# Fix corrupted history file by stripping invalid bytes.
+fix-history() {
+  strings "$HISTFILE" > "${HISTFILE}.tmp" && mv "${HISTFILE}.tmp" "$HISTFILE"
+}
 alias ll='ls -alF --color=auto'
 alias ls='ls --color=auto'
 alias la='ls -A --color=auto'
