@@ -145,3 +145,6 @@ alias python-off='pyvenv_deactivate'
 [[ -f /home/logan/.dart-cli-completion/zsh-config.zsh ]] && . /home/logan/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
+
+# opencode
+export PATH=/home/logan/.opencode/bin:$PATH
