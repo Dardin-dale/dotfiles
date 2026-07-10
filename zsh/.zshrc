@@ -80,29 +80,14 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
 # END ANSIBLE MANAGED BLOCK - Golang
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-# BEGIN ANSIBLE MANAGED BLOCK - NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-# END ANSIBLE MANAGED BLOCK - NVM
 # BEGIN ANSIBLE MANAGED BLOCK - Rust
 export PATH="$HOME/.cargo/bin:$PATH"
 # END ANSIBLE MANAGED BLOCK - Rust
 alias activate_python="source /home/logan/.venvs/python/bin/activate"
 
-# fnm
-FNM_PATH="/home/logan/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="/home/logan/.local/share/fnm:$PATH"
-  eval "`fnm env`"
-fi
-# BEGIN ANSIBLE MANAGED BLOCK - fnm
+# fnm (Node version manager)
 export PATH=$HOME/.local/share/fnm:$PATH
 eval "$(fnm env --use-on-cd 2>/dev/null || true)"
-# END ANSIBLE MANAGED BLOCK - fnm
 # BEGIN ANSIBLE MANAGED BLOCK - Neovim
 # Add local bin to PATH for Neovim
 export PATH="$HOME/.local/bin:$PATH"
